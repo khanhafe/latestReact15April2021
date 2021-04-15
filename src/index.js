@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Comment from "./comment";
 
 //const App = () => <div>hello world</div>;
 
@@ -12,7 +13,11 @@ class App extends React.Component {
     };
   }
   render() {
-    return <div>{this.state.name}</div>;
+    return (
+      <div>
+        {this.state.name} <Comment />
+      </div>
+    );
   }
 }
 
